@@ -129,6 +129,16 @@ table.links2 tr {
     margin: 30px !important;
 }
 
+/* not tbody.ng-scope, because firefox goes wacky with breaks */
+/* td[field-name="name"] { */ 
+/* back to the original */
+tbody.ng-scope {
+ /* Word break settings to break loooong words */
+-ms-word-break: break-all;
+    word-break: break-all;
+ /* Non standard for webkit */
+     word-break: break-word;
+}
 
 a.stdname {
     color: steelblue;
